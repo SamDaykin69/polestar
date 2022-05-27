@@ -9,7 +9,6 @@
     When is Sam's car arriving?
     </title>
     <style>
-html { font-size: 2vw; }
     body{
         font-family:"Polestar Unica", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
@@ -30,7 +29,7 @@ html { font-size: 2vw; }
 
     td{
         text-align:center;
-        width:25%;
+        width:50%;
     }
 
     h3{
@@ -40,11 +39,11 @@ html { font-size: 2vw; }
     }
 
     #header{
-        height:50px;
-        padding:25px;
+        height:100px;
+        padding:100px;
         margin: 0 auto;
         width:100%;
-        min-width:1000px;
+        min-width:1200px;
     }
 
     #main{
@@ -52,8 +51,8 @@ html { font-size: 2vw; }
         margin: 0 auto;
         background-color:rgb(240, 240, 240);
         text-align:center;
-        width:90%;
-        min-width:1000px;
+        width:60%;
+        min-width:1200px;
     }
 
     h1{
@@ -63,29 +62,54 @@ html { font-size: 2vw; }
         font-size: 2.875rem;
         letter-spacing: -0.075rem;
         line-height: 2rem;
-        margin:100px;
+        margin:500px;
 
     }
     th{
         color: rgba(0, 0, 0, 0.6);
         overflow-wrap: anywhere;
-        font-size: 1.5rem;
+        font-size: 3rem;
         letter-spacing: -0.01875rem;
-        line-height: 3.125rem;
+        line-height: 3rem;
 
     }
     td{
         color: rgb(0, 0, 0);
         overflow-wrap: anywhere;
-        font-size: 1.5rem;
+        font-size: 3rem;
         letter-spacing: -0.01875rem;
-        line-height: 3.125rem;
+        line-height: 3rem;
 
     }
     .image{
         max-width:768px;
         width:60%;
         margin:0 auto;
+    }
+@media only screen and (max-device-width: 600px) {
+        div#wrapper {
+            width: 600px;
+        }
+
+        div#header {
+            background-image: url(media-queries-phone.jpg);
+            height: auto;
+            position: relative;
+        }
+
+        div#header h1 {
+            font-size: auto;
+        }
+
+        #content {
+            float: none;
+            width: auto;
+        }
+
+        #navigation {
+            float:none;
+            width: auto;
+        }
     }
     </style>
     
